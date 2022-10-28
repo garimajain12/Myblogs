@@ -26,23 +26,6 @@ const BlogCard = ({
     useEffect(() => {
         localStorage.setItem('blog', JSON.stringify(blogs))
     }, [blogs])
-
-//     const likePost = () => {
-//          const currentPost = JSON.parse(localStorage.getItem('blog'));
-//             const index = currentPost.findIndex(item => item.id === data.id);
-//             console.log(index)
-//             currentPost[index].like += 1;
-//             setBlog(currentPost[index]);
-//             localStorage.setItem('blog', JSON.stringify(currentPost));
-//     }
-
-//    const deletePost = () => {
-//     const currentPost = JSON.parse(localStorage.getItem('blog'));
-//     const newPost = currentPost.filter(item => item.id !== data.id);
-//     localStorage.setItem('blog', JSON.stringify(newPost));
-//     window.location.reload();
-//    }
-
     
   return (
     <div className="container_copy">
